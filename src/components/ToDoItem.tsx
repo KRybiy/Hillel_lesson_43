@@ -1,8 +1,11 @@
 import { FaCheck } from "react-icons/fa";
-import ToDoPropsInterface from "../type/ToDoProps.Interface";
 import { RiDeleteBin2Line, RiTodoFill } from "react-icons/ri";
+import { useContext } from "react";
+import { ToDoContext } from "../context/ToDoContext";
+import ToDoPropsInterface from "../type/ToDoProps.Interface";
 
-const ToDoItem = ({ todo: { id, title, completed }, deleteToDo, toggleToDo }: ToDoPropsInterface) => {
+const ToDoItem = ({ todo: { id, title, completed } }: ToDoPropsInterface) => {
+  const { deleteToDo, toggleToDo } = useContext(ToDoContext);
   return (
     <div className={`todo-item ${completed ? 'completed' : 'not-completed'}`}>
       <RiTodoFill className="todo-item-icon" />

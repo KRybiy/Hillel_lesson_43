@@ -42,7 +42,12 @@ body {
   font-size: 16px;
 }
 
-.button {
+/* Button Styles */
+.button,
+.actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   padding: 10px 20px;
   background-color: #28a745;
   color: #fff;
@@ -50,14 +55,24 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
+.button:hover,
+.actions button:hover {
   background-color: #218838;
 }
 
-/* Actions Styles */
+.button:disabled,
+.actions button:disabled,
+.button.disabled,
+.actions button.disabled {
+  background-color: #4bb50082;
+  cursor: not-allowed;
+  color: #fff;
+}
 
+/* Actions Styles */
 .actions {
   display: flex;
   justify-content: center;
@@ -65,52 +80,29 @@ body {
   margin-bottom: 20px;
 }
 
-
-.actions button {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10px 15px;
-  background-color: #f44336; 
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.actions button:hover {
-  background-color: #e57373; 
-}
-
-.actions button:disabled,
-.actions button.disabled {
-  background-color: #f9c0c0; 
-  cursor: not-allowed;
-  color: #fff;
-}
-
 .status-message {
   font-size: 1rem;
-  color: #4a4a4a; 
+  color: #4a4a4a;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 8px;
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 .status-message.success {
-  color: #28a745; 
+  color: #28a745;
 }
 
 .status-message.warning {
-  color: #ff851b; 
+  color: #ff851b;
+}
+
+.actions button .icon {
+  font-size: 24px; 
 }
 
 /* Todo List Styles */
-
 .todo-list {
   margin-top: 20px;
 }
