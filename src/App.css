@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+/* Actions Styles */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  background-color: #f44336; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #e57373; 
+}
+
+.actions button:disabled,
+.actions button.disabled {
+  background-color: #f9c0c0; 
+  cursor: not-allowed;
+  color: #fff;
+}
+
+.status-message {
+  font-size: 1rem;
+  color: #4a4a4a; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f0f0f0; 
+}
+
+.status-message.success {
+  color: #28a745; 
+}
+
+.status-message.warning {
+  color: #ff851b; 
+}
+
+/* Todo List Styles */
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.list-title {
+  text-align: center;
+  color: #555;
+}
+
+.no-todos {
+  text-align: center;
+  color: #777;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.todo-item-icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.todo-item-title {
+  flex: 1;
+  font-size: 18px;
+  color: #333;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-check-icon,
+.todo-delete-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.todo-check-icon {
+  color: #737774;
+}
+
+.todo-delete-icon {
+  color: #000000;
+}
+
+.todo-check-icon:hover {
+  color: #218838;
+}
+
+.todo-delete-icon:hover {
+  color: #c82333;
+}
+
+.completed {
+  background-color: #e6ffe6;
+}
+
+.not-completed {
+  background-color: #5aceffbe;
+}
